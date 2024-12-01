@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/HelloTextView"
+        android:text="@string/welcome"
+        style="@style/StyleHelloText"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/EntryTextView"
+        android:text="@string/entry"
+        style="@style/StyleHelloText"
+
+        android:layout_marginTop="@dimen/big_margin"
+        app:layout_constraintTop_toBottomOf="@+id/HelloTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutLoginField"
+        style="@style/StyleLinearField"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EntryTextView">
+
+        <EditText
+            android:id="@+id/EntryEditText"
+            style="@style/StyleTextField"
+            android:hint="@string/enter_email_or_phone"/>
+
+        <EditText
+            android:id="@+id/PasswordEditText"
+            style="@style/StyleTextField"
+            android:hint="@string/enter_password"/>
+
+        <CheckBox
+            android:id="@+id/LoginAutomaticallyCheckBox"
+            style="@style/StyleTextField"
+            android:text="@string/login_automatically"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:text="@string/entry"
+        style="@style/StyleEnterButton"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutLoginField"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

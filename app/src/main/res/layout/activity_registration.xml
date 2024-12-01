@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/HelloTextView"
+        android:text="@string/welcome"
+        style="@style/StyleHelloText"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/RegistrationTextView"
+        android:text="@string/registration"
+        style="@style/StyleHelloText"
+
+        app:layout_constraintTop_toBottomOf="@+id/HelloTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutChooseEntry"
+        style="@style/StyleLinearField"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/ByPhoneTextView"
+            android:text="@string/by_number"
+            style="@style/StyleChoseButton"/>
+
+        <TextView
+            android:id="@+id/ByEmailTextView"
+            android:text="@string/by_email"
+            style="@style/StyleChoseButton"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutRegistrationField"
+        style="@style/StyleLinearField"
+
+        app:layout_constraintTop_toBottomOf="@id/LinearLayoutChooseEntry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/EntryEditText"
+            style="@style/StyleTextField"
+            android:hint="@string/enter_email_or_phone"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/PasswordEditText"
+            style="@style/StyleTextField"
+            android:hint="@string/enter_password"/>
+
+        <EditText
+            android:id="@+id/RepeatPasswordEditText"
+            style="@style/StyleTextField"
+            android:hint="@string/repeat_password"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/RegistrationButton"
+        android:text="@string/registration"
+        style="@style/StyleEnterButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutRegistrationField"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

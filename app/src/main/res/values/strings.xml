@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LabsApp</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="entry">Вход</string>
+    <string name="enter_email_or_phone">Введите email/телефон</string>
+    <string name="enter_email">Введите email</string>
+    <string name="enter_phone">Введите телефон</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="login_automatically">Входить автоматически</string>
+    <string name="registration">Регистрация</string>
+    <string name="by_number">По номеру</string>
+    <string name="by_email">По email</string>
+    <string name="repeat_password">Повторите пароль</string>
+
+    <string name="error_invalid_email">Почта введена неверно, повторите ввод</string>
+    <string name="error_invalid_phone">Номер телефона введен неверно, повторите ввод</string>
+    <string name="error_invalid_length_password">Пароль должен быть минимум 8 символов</string>
+    <string name="error_mismatch_password">Пароли не совпадают</string>
+</resources>
