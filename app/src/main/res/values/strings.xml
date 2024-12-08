@@ -16,4 +16,7 @@
     <string name="error_invalid_phone">Номер телефона введен неверно, повторите ввод</string>
     <string name="error_invalid_length_password">Пароль должен быть минимум 8 символов</string>
     <string name="error_mismatch_password">Пароли не совпадают</string>
+    <string name="error_invalid_login_or_phone">Неправильный логин или пароль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

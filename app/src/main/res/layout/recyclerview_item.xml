@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:id="@+id/Layout_CardOfElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/very_small_margin"
+        android:background="@color/dark_cyan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/PhoneName"
+            android:text="1. Название телефона"
+            style="@style/RecycleTitleTextView" />
+
+        <LinearLayout
+            android:id="@+id/LayoutPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/PricePhoneText"
+                android:text="Прайс: "
+                style="@style/RecycleTextView"/>
+
+            <TextView
+                android:id="@+id/PricePhoneData"
+                android:text="$1299"
+                style="@style/RecycleTextView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutLaunchDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/LaunchDateText"
+                android:text="Дата: "
+                style="@style/RecycleTextView"/>
+
+            <TextView
+                android:id="@+id/LaunchDateData"
+                android:text="Sep, 2022"
+                style="@style/RecycleTextView"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutCameraScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/CameraScoreText"
+                android:text="Рейтинг камеры: "
+                style="@style/RecycleTextView"/>
+
+            <TextView
+                android:id="@+id/CameraScoreData"
+                android:text="149"
+                style="@style/RecycleTextView"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
