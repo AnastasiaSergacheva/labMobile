@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.sergacheva.labsapp"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -53,4 +54,9 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment:2.8.4")
     implementation("androidx.navigation:navigation-ui-ktx:2.8.4")
     implementation("androidx.navigation:navigation-ui:2.8.4")
+
+    //Firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.firebase:firebase-auth-ktx:23.1.0")
 }

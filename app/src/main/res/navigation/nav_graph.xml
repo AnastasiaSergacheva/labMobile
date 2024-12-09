@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/oneFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/oneFragment"
@@ -13,5 +13,29 @@
         android:id="@+id/twoFragment"
         android:name="com.sergacheva.labsapp.TwoFragment"
         android:label="twoFragment"/>
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.sergacheva.labsapp.SplashFragment"
+        android:label="SplashFragment">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.sergacheva.labsapp.LoginFragment"
+        android:label="LoginFragment"/>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.sergacheva.labsapp.RegistrationFragment"
+        android:label="RegistrationFragment"/>
 
 </navigation>
